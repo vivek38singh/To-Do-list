@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Todolist_v1</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+  <div class="box" id="heading">
+    <h1> <%= details %> </h1>
+  </div>
+
+  <div class="box">
+    <% for (var i=0; i<newListItems.length; i++) { %>
+    <div class="item">
+      <input type="checkbox">
+      <p> <%= newListItems[i] %></p>
+    </div>
+    <% } %>
+
+    <form class="item" action="/" method="post">
+      <input type="text" name="newItem" placeholder="Add new item" autocomplete="off">
+      <button type="sumbit" name="button">+</button>
+    </form>
+  </div>
+
+</body>
+<footer>Copywrite 2020 @vivek389singh</footer>
+</html>
